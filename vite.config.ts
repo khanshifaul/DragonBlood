@@ -15,4 +15,7 @@ export default defineConfig({
       },
     },
   },
+  preview: {
+    allowedHosts: ["dragonblood.onrender.com"],
+  },
 });
