@@ -8,7 +8,7 @@ export default defineConfig({
     host: "0.0.0.0",
     proxy: {
       "/socket.io": {
-        target: process.env.VITE_API_URL! ,
+        target: process.env.VITE_API_URL|| 'https://dragonblood-backend.onrender.com' ,
         changeOrigin: true,
         ws: true,
         secure: false,
