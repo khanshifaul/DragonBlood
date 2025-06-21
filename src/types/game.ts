@@ -37,4 +37,16 @@ export interface GameConstants {
   MAX_BET: number;
   ROUND_DELAY: number;
   REVEAL_DELAY: number;
-} 
+}
+
+export interface BetResult {
+  cardIndex: number;
+  amount: number;
+  won: boolean;
+  payout: number;
+}
+
+export interface PlayerBetResult {
+  playerId: string;
+  bets: BetResult[];
+}
